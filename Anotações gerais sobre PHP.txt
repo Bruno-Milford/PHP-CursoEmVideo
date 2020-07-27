@@ -1,0 +1,222 @@
+TIPOS DE VARIAVEIS (TYPECAST)
+
+Inteiro --> (int), (integer)
+Real --> (real), (float), (double)
+Caractere --> (string)
+Lógico --> (???) ---> true = 1 
+		 ---> false = vazio 
+
+OPERADORES ARITMÉTICOS SUPORTADOS PELO PHP
+
+soma (+) , sub (-) , mult (*) , div (/) e modulo (%)
+
+OREDEM DE PRECEDÊNCIA 
+
+parênteses ()
+
+mult 
+div 	* / %
+modulo 
+
+adição 
+sub  + -
+
+O parametro GET pega o valor da variavel da URL
+
+Funções Matemáticas 
+
+abs(valor absoluto)
+pow(potenciação)
+sqrt(raiz quadrada)
+round(arredondamento)
+intval(valor inteiro da variável)
+munber_format(formatação)
+
+Operadores de Incremento 
+
+Pré-incremento $a = $a + 1 --> ++$a
+
+Pós-incremento $a = $a + 1 --> $a++
+
+Pré-decremento $a = $a - 1 --> --$a
+
+Pós-decremento $a = $a - 1 --> $a--
+
+Comentarios
+
+// 
+# 
+/**/
+
+Variáveis referenciadas
+
+$a = 3;
+$b = &$a;
+
+Com o & na frente do $ vai criar uma variavel referenciada
+
+Variáveis de variáveis 
+
+efetuar comparações
+
+Operadores Relacionais
+
+Maior $a > $b
+Menor $a < $b
+Maior ou igual $a >= $b
+Menor ou igual $a <= $b
+Diferente $a <> $b ou $a != $b
+Igual $a == $b
+
+Operador Unário 
+?	: 
+
+Operador lógico
+
+and ou &&
+
+or ou || 
+
+xor 
+
+!
+
+Como obter dados de formularios 
+
+method="get" (method é o metodo de envio que pode ser get ou post)
+
+action="dados.php" (action indica uma ação, ou seja, para aonde os dados serão enviados)
+
+isset (se foi configurado)
+
+html5 + php + css3
+
+exemplo de php + html
+
+<?php
+     echo "<span class='texto'>$txt</span>";
+?>
+
+exemplo de css + php 
+
+<style>
+
+      span.texto {
+          font-size: <?php echo $tam; ?> ;
+          color: <?php echo $cor; ?> ; 
+      }
+
+</style>
+
+Estrutura Condicional
+
+if, else if, else
+
+switch
+
+Estrutura de repetição while
+
+Modificando o laço white (break / continue)
+
+Estrutura de repetição do while
+
+Estrutura de repetição for
+
+Rotinas em php (funções)
+
+função q retorna valor
+
+Parametros variaveis
+
+Rotinas com multiplos parametros e com parametros dinamicos
+
+func_get_args(); --> Essa função pega todos os argumentos e coloca dentro de um vetor na variavel p
+func_num_args(); --> Essa fução vai retornar o numero de argumentos passados e coloca dentro da variavel tot
+
+Formas de envios de parametros
+
+passagem por valor e passagem por referencia
+
+Funções string em php
+
+Funções para a manipulação de string 
+
+Tabelas de parametros que o printf aceita 
+
+%d valor decimal (positivo ou negativo)
+%u valor decimal sem sinal (apenas positivo)
+%f valor real
+%s string  
+
+print_r($x) || var_dump($x) || var_export($x)
+
+strlen (conta a quantidade de letras e espaços)
+
+trim (remove os espaços iniciais e finais)
+
+ltrim (remove os espaços iniciais)
+
+rtrim (remove os espaços finais)
+
+str_word_count (me entraga a quantidade de palavras q há dentro de uma string)
+
+explode (nova versão do str_word_count)
+
+str_split (Mostar cada letra em um indice separado do vetor)
+
+implode e join (em vez de quebrar o texto essas duas funções juntam elas)
+
+strtolower (diminui as letras q estão em maiusculas)
+
+strtoupper (aumenta as letras q estão minusculas)
+
+ucfirst (colocar a primeira letra maiusculas)
+
+ucwords (deixa a primeira letra de todas as palavras em maiusculas)
+
+strpos (localiza a posição da string)
+
+stripos (localiza a posição da string, ignorando a caixa de ref)
+
+substr_count (retorna a quantidade de vezes q a string apareceu na frase)
+
+str_pad (vai fazer a string caber em um mesmi espaço)
+
+str_repeat (repete a string)
+
+Vetores e matrizes 
+
+range (se por exemplo vc tem um vetor de (5, 20, 5) o primeiro n correspodena ao vetor 0 e o segundo ao vetor 3 e o ultimo numero vai aumentando)
+
+Chaves associativas 
+
+Matrizes (vetores dentro de vetores)
+
+Funções p/ vetores
+
+var_dump (exibir vetor)
+
+count (conta os elementos)
+
+array_push (adiciona um dado ao ultimo vetor)
+
+array_pop (elemina o ultimo elemento do vetor)
+
+array_unshift(adiciona um dado ao primeiro vetor)
+
+array_shitf(elemina o primeiro elemento do vetor)
+
+sort (ordena os vetores de forma crescente)
+
+rsort (ordena os vetores de forma decrescente)
+
+asort (ordena os vetores e tbm altera as suas posições)
+
+arsorte (mesma função do rsort)
+
+ksort (ordena as chaves em ordem crescente)
+
+krsort (ordena as chaves em ordem decrescente)
+
+
+ksort (ordena as chaves em ordem crescente)
